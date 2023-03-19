@@ -1,0 +1,55 @@
+/* Background Style */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: Noto Sans, sans-serif;
+    }
+
+body {
+background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+overflow: hidden;
+}
+
+/* Main Container */
+#main-container {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate(0, -54%);
+}
+
+/* Logo */
+#logo {
+    display: block;
+    margin: 28px auto;
+    max-width: 80%;
+    text-align: center;
+    color: #645454;
+    font-size: 10px;
+}
+
+/* Canvas */
+#clock {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Resolution Responsiveness*/
+@media only screen and (max-width: 999px) {
+    #logo {
+        font-size: 10px;
+        margin: 22px auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #logo {
+        font-size: 10px;
+        margin: 18px auto;
+    }
+}
